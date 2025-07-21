@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="MarketAI - Generate high-converting marketing content in seconds with AI. Create compelling slogans, ad copy, product descriptions, hashtags, and emails that drive sales and engagement."
+        />
+        <meta
+            name="keywords"
+            content="AI marketing, content generator, slogan generator, ad copy, product descriptions, hashtags, email marketing, artificial intelligence, marketing automation, content creation, copywriting AI, digital marketing"
+        />
+        <meta name="author" content="MarketAI" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="7 days" />
+        <meta
+            property="og:title"
+            content="MarketAI - AI-Powered Marketing Content Generator | Create High-Converting Copy"
+        />
+        <meta
+            property="og:description"
+            content="Transform your marketing with AI-generated content. Create compelling slogans, ad copy, product descriptions, hashtags, and emails that convert. Try MarketAI today!"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://marketai.netlify.app" />
+        <meta
+            property="og:image"
+            content="https://marketai.netlify.app/og-image.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="MarketAI - AI Marketing Content Generator"
+        />
+        <meta
+            name="twitter:description"
+            content="Generate professional marketing content with AI. Create slogans, ad copy, product descriptions, hashtags, and emails that convert."
+        />
+        <meta
+            name="twitter:image"
+            content="https://marketai.netlify.app/twitter-image.jpg"
+        />
+
+        <title>
+            MarketAI - AI-Powered Marketing Content Generator | Create
+            High-Converting Copy in Seconds
+        </title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- PWA Manifest -->
+        <link
+            rel="manifest"
+            href="data:application/json;base64,eyJuYW1lIjoiTWFya2V0QUkgLSBBSSBNYXJrZXRpbmcgR2VuZXJhdG9yIiwic2hvcnRfbmFtZSI6Ik1hcmtldEFJIiwic3RhcnRfdXJsIjoiLyIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwiaWNvbnMiOlt7InNyYyI6ImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjNhV1IwYUQwaU1UQXdJaUJvWldsbmFIUTlJakV3TUNJZ1ptbHNiRDBpSXpFd01qWXhPQ0lnZG1sbGQwSnZlRDBpTUNBd0lERXdNQ0F4TURBaVBnbzhjbVZqZENCM2FXUjBhRDBpT1RBaUlHaGxhV2RvZEQwaU9UQWlJSGc5SWpVaUlIazlJalVpSUhKNFBTSTJJaUJtYVd4c1BTSWpabVptSWk4K1BHOXdZWFJvSUdScFBTSnRNell1TmpNc01pNHhPQ0V6TXkwNUlERTFMakU0TFRFeExtZDJNeUExZGkwM0lEa3VOZzB0TVRBc01UWTJkaTAyTWk0NU9WZ3dJakJrUkVVaVNVSmVhRkJyYVNVeGIzRmxhaTlRYjI4aVNFNUVJRTFzWVNCRmRrVmhTVkZsYkdOUllteHRUTlEwUkdOek1tMUlTVzVwTFVacFkySmxZMTl5UVhCZ1pVOXdjM1JQVnpGSVozZEVTa0ZXUW1oNFVUa3ZTV0pLWXk1SVFXaFNjVnBtSW5JOU16azNhV1ptUEMxdmNHRjBhRDROUFVneUluZHBaWGQwYUQwaU1USTFJU0JvWldsbmFIUTlJakV3TUNJZ2RtbGxkMEp2ZUQwaU1DQXdJREV3TUNBMU1EQWlQZzB0UEc5d1lYUm9JR1E5SWswME9TQXRPUZ0lUERSME1qZ3VNak05SWpFM01qWXlNVGR6ZEhOcGEyUmxaQ0lpWm1sc2JEMGlJelF4TkRVMU5pSXZQZ3cvY25Od1FUNHdJQUFBIn0sInNyYyI6ImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjNhV1IwYUQwaU1UQXdJaUJvWldsbmFIUTlJakV3TENJZ1ptbHNiRDBpSXpFd01qWXhPQ0lnZG1sbGQwSnZlRDBpTUNBd0lERXdNQ0F4TURBaVBnbzhjbVZqZENCM2FXUjBhRDBpT1RBaUlHaGxhV2RvZEQwaU9UQWlJSGc5SWpVaUlIazlJalVpSUhKNFBTSTJJaUJtYVd4c1BTSWpabVptSWk4K1BHOXdZWFJvSUdScFBTSnRNell1TmpNc01pNHhPQ0V6TXkwNUlERTFMakU0TFRFeExtZDJNeUExZGkwM0lEa3VOZzB0TVRBc01UWTJkaTAyTWk0NU9WZ3dJakJrUkVVaVNVSmVhRkJyYVNVeGIzRmxhaTlRYjI4aVNFNUVJRTFzWVNCRmRrVmhTVkZsYkdOUllteHRUTlEwUkdOek1tMUlTVzVwTFVacFkySmxZMTl5UVhCZ1pVOXdjM1JQVnpGSVozZEVTa0ZXUW1oNFVUa3ZTV0pLWXk1SVFXaFNjVnBtSW5JOU16azNhV1ptUEMxdmNHRjBhRDROUFVneUluZHBaWGQwYUQwaU1ESTFJU0JvWldsbmFIUTlJakV3TUNJZ2RtbGxkMEp2ZUQwaU1DQXdJREV3TUNBMU1EQWlQZzB0UEc5d1lYUm9JR1E5SWswME9TQXRPUZ0lUERSME1qZ3VNak05SWpFM01qWXlNVGR6ZEhOcGEyUmxaQ0lpWm1sc2JEMGlJelF4TkRVMU5pSXZQZ3cvY25Od1FUNHdJQUFBIiwic2l6ZXMiOiIxOTJ4MTkyIiwidHlwZSI6ImltYWdlL3N2ZyJ9XSwidGhlbWVfY29sb3IiOiIjMTAyNjE4IiwiYmFja2dyb3VuZF9jb2xvciI6IiMwZjE3MmEifQ=="
+        />
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzEwMjYxOCIgdmlld0JveD0iMCAwIDEwMCAxMDAiPgo8cmVjdCB3aWR0aD0iOTAiIGhlaWdodD0iOTAiIHg9IjUiIHk9IjUiIHJ4PSI2IiBmaWxsPSIjZmZmIi8+PG9wYXRoIGQ9Im0zNi42Myw5LjE4IDE2LTkgMTUuMTgtMTEgdjMyIDV2LTcgOS42LTEwLDE2NnYtNjIuOTlYd0lERUlTUUJlaFBraVUxb3FsYWkvUG9vSUhORUlNbGFTRnZrVmhTVkZlbEdOUmJteHRUTlEwUkdOek1tMUlTVzVwTFVacFkySmxZMTl5UVhCZ1pVOXdjM1JQVnpGSFozZEVTa0ZXUW1oeFVUay9TV0pLWXk1SVFXaFNjVnBmIihJPTM5N2lmZlAtMG9wYXRoD1BUeUluZHBaWGQwYUQ5aU1USTFJaUJvWldsbmFIUTlJakV3TUNJZ2RtbGxkMEp2ZUQ5aU1DQXdJREV3TUNBMU1EQWlQZzB0PG9wYXRoIGQ9Ik04OS09RR0lUDR0MjguMko5IjE3MjYyMTdzdHNpa2RlZCIiZmlsbD0iIzQxNDU1NiIvPgw/cnNwQT40IEFBQSA="
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Icons from Feather Icons -->
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="logo.png" alt="MarketAI Logo" class="logo-image">
+                    <span class="brand-text">MarketAI</span>
+                </div>
+                <div class="nav-actions">
+                    <button
+                        class="theme-toggle"
+                        id="theme-toggle"
+                        aria-label="Toggle theme"
+                    >
+                        <i data-feather="sun" class="theme-icon"></i>
+                    </button>
+                    <button
+                        class="install-btn"
+                        id="install-btn"
+                        style="display: none"
+                    >
+                        <i data-feather="download"></i>
+                        Install App
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Create High-Converting Marketing Content with
+                            <span class="gradient-text">AI Magic</span>
+                        </h1>
+                        <p class="hero-description">
+                            Stop spending hours on copywriting. Generate
+                            compelling slogans, persuasive ad copy, engaging
+                            product descriptions, trending hashtags, and
+                            converting emails in seconds—powered by cutting-edge
+                            AI.
+                        </p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">10x</span>
+                                <span class="stat-label"
+                                    >Faster Content Creation</span
+                                >
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">Content Types</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">GPT-4o</span>
+                                <span class="stat-label">AI Powered</span>
+                            </div>
+                        </div>
+                        <div class="hero-cta">
+                            <a href="#generator" class="cta-button primary">
+                                <span>Start Creating Now</span>
+                                <i data-feather="arrow-right"></i>
+                            </a>
+                            <a href="#features" class="cta-button secondary">
+                                <span>See Features</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Generator Section -->
+            <section class="generator" id="generator">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Start Creating Magic</h2>
+                        <p class="section-description">
+                            Choose your content type, describe your product, and
+                            watch AI create conversion-focused copy in seconds
+                        </p>
+                    </div>
+
+                    <div class="generator-card">
+                        <form class="generator-form" id="generator-form">
+                            <div class="form-group">
+                                <label for="content-type" class="form-label"
+                                    >Content Type</label
+                                >
+                                <div class="content-type-grid">
+                                    <input
+                                        type="radio"
+                                        id="slogan"
+                                        name="contentType"
+                                        value="slogan"
+                                        checked
+                                    />
+                                    <label
+                                        for="slogan"
+                                        class="content-type-card"
+                                    >
+                                        <i data-feather="zap"></i>
+                                        <span>Catchy Slogans</span>
+                                        <small
+                                            >Memorable brand taglines that
+                                            stick</small
+                                        >
+                                    </label>
+
+                                    <input
+                                        type="radio"
+                                        id="ad-copy"
+                                        name="contentType"
+                                        value="ad-copy"
+                                    />
+                                    <label
+                                        for="ad-copy"
+                                        class="content-type-card"
+                                    >
+                                        <i data-feather="volume-2"></i>
+                                        <span>Ad Copy</span>
+                                        <small
+                                            >Persuasive ads that convert</small
+                                        >
+                                    </label>
+
+                                    <input
+                                        type="radio"
+                                        id="product-description"
+                                        name="contentType"
+                                        value="product-description"
+                                    />
+                                    <label
+                                        for="product-description"
+                                        class="content-type-card"
+                                    >
+                                        <i data-feather="package"></i>
+                                        <span>Product Descriptions</span>
+                                        <small
+                                            >Compelling product stories</small
+                                        >
+                                    </label>
+
+                                    <input
+                                        type="radio"
+                                        id="hashtags"
+                                        name="contentType"
+                                        value="hashtags"
+                                    />
+                                    <label
+                                        for="hashtags"
+                                        class="content-type-card"
+                                    >
+                                        <i data-feather="hash"></i>
+                                        <span>Trending Hashtags</span>
+                                        <small>Boost your social reach</small>
+                                    </label>
+
+                                    <input
+                                        type="radio"
+                                        id="email"
+                                        name="contentType"
+                                        value="email"
+                                    />
+                                    <label
+                                        for="email"
+                                        class="content-type-card"
+                                    >
+                                        <i data-feather="mail"></i>
+                                        <span>Email Campaigns</span>
+                                        <small
+                                            >High-converting email copy</small
+                                        >
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label
+                                    for="product-description-input"
+                                    class="form-label"
+                                    >Product Description</label
+                                >
+                                <textarea
+                                    id="product-description-input"
+                                    name="productDescription"
+                                    class="form-textarea"
+                                    placeholder="Describe your product or service in detail. Include key features, benefits, target audience, and any specific requirements..."
+                                    rows="4"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="generate-btn"
+                                id="generate-btn"
+                            >
+                                <i data-feather="cpu"></i>
+                                <span class="btn-text">Generate Content</span>
+                                <div
+                                    class="loading-spinner"
+                                    style="display: none"
+                                ></div>
+                            </button>
+                        </form>
+
+                        <div
+                            class="result-section"
+                            id="result-section"
+                            style="display: none"
+                        >
+                            <div class="result-header">
+                                <h3 class="result-title">Generated Content</h3>
+                                <div class="result-actions">
+                                    <button
+                                        class="action-btn copy-btn"
+                                        id="copy-btn"
+                                        title="Copy to clipboard"
+                                    >
+                                        <i data-feather="copy"></i>
+                                    </button>
+                                    <button
+                                        class="action-btn regenerate-btn"
+                                        id="regenerate-btn"
+                                        title="Generate new content"
+                                    >
+                                        <i data-feather="refresh-cw"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="result-content"
+                                id="result-content"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features" id="features">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            Transform Your Marketing Game
+                        </h2>
+                        <p class="section-description">
+                            Experience the power of AI-driven content creation
+                            with features designed to 10x your productivity
+                        </p>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature-card featured">
+                            <div class="feature-icon">
+                                <i data-feather="zap"></i>
+                            </div>
+                            <h3 class="feature-title">10x Faster Creation</h3>
+                            <p class="feature-description">
+                                Generate high-converting marketing copy in
+                                seconds instead of spending hours brainstorming
+                            </p>
+                            <div class="feature-highlight">Save 90% time</div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-feather="cpu"></i>
+                            </div>
+                            <h3 class="feature-title">GPT-4o Powered</h3>
+                            <p class="feature-description">
+                                Powered by OpenAI's most advanced model for
+                                human-like, persuasive content that converts
+                            </p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-feather="target"></i>
+                            </div>
+                            <h3 class="feature-title">Conversion Optimized</h3>
+                            <p class="feature-description">
+                                Every piece of content is crafted to drive
+                                action and maximize your conversion rates
+                            </p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-feather="layers"></i>
+                            </div>
+                            <h3 class="feature-title">5 Content Types</h3>
+                            <p class="feature-description">
+                                Slogans, ad copy, product descriptions,
+                                hashtags, and emails—all in one powerful
+                                platform
+                            </p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-feather="shield"></i>
+                            </div>
+                            <h3 class="feature-title">Enterprise Security</h3>
+                            <p class="feature-description">
+                                Your data and API keys are protected with
+                                bank-level security and never stored
+                            </p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-feather="smartphone"></i>
+                            </div>
+                            <h3 class="feature-title">Work Anywhere</h3>
+                            <p class="feature-description">
+                                Full PWA support—install as an app and create
+                                content on any device, even offline
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <img src="logo.png" alt="MarketAI Logo" class="footer-logo">
+                        <span>MarketAI</span>
+                    </div>
+                    <p class="footer-description">
+                        Transforming marketing with AI-powered content
+                        generation. Create professional copy that converts in
+                        seconds.
+                    </p>
+                    <div class="footer-stats">
+                        <div class="footer-stat">
+                            <span class="stat-value">GPT-4o</span>
+                            <span class="stat-desc">AI Model</span>
+                        </div>
+                        <div class="footer-stat">
+                            <span class="stat-value">99.9%</span>
+                            <span class="stat-desc">Uptime</span>
+                        </div>
+                        <div class="footer-stat">
+                            <span class="stat-value">10x</span>
+                            <span class="stat-desc">Faster</span>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>
+                            &copy; 2025 MarketAI. Powered by OpenAI GPT-4o |
+                            Built with ❤️ for marketers worldwide.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="script.js"></script>
+    </body>
+</html>
